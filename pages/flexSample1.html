@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<title>Example1</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 2em;
+    }
+
+    .outer-col-1 {
+        background: #D7E8D4;
+        flex: 1;
+    }
+
+    .outer-col-2 {
+        display: flex;
+        font-weight: bold;
+        flex-direction: column;
+        align-content: center;
+        flex: 4;
+    }
+
+    .inner-row {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .inner-col {
+        flex: 5;
+
+    }
+
+    article {
+        margin: 10px;
+        background: aqua;
+        text-align: left;
+        padding: 10px ;
+    }
+
+    .inner-row aside {
+        background: beige;
+        flex: 1;
+    }
+
+    header,
+    footer {
+        background: yellowgreen;
+        text-align: center;
+    }
+
+    header,
+    footer,
+    nav,
+    aside {
+        padding: 10px;
+        text-align: center;
+        
+    }
+</style>
+
+<body>
+    <nav class="outer-col-1"><h1>nav</h1></nav>
+    <div class="outer-col-2">
+        <header>
+            <h1>HEADER - Sample FlexBox Example - 1</h1>
+        </header>
+        <div class="inner-row">
+            <div class="inner-col">
+                <article>
+                    <h2>First article</h2>
+                    <p>This is first article:-
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </p>
+                </article>
+                <article>
+                    <h2>Second ariticle</h2>
+                    <p>Standard recommendations to prevent infection spread include regular hand washing, covering mouth
+                        and
+                        nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with
+                        anyone
+                        showing symptoms of respiratory illness such as coughing and sneezing.</p>
+                </article>
+                <article>
+                    <h3>Third article</h3>
+                    <p>Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed
+                        investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from
+                        dromedary camels to humans. Several known coronaviruses are circulating in animals that have not
+                        yet
+                        infected humans.</p>
+                </article>
+                <footer>
+                    <h1>Footer</h1>
+                </footer>
+            </div>
+            <aside>
+                <h1>Aside</h1>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
